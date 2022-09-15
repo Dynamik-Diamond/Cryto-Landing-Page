@@ -3,7 +3,7 @@ export const styles = {
     'font-bold text-[2rem] sm:text-[4rem] md:leading-[76px]',
   heading2:
     'font-bold text-[1.9rem] md:text-[2.5rem]  leading-[40px] md:leading-[60px] ',
-  heading3: 'font-bold md:text-[2rem] leading-[38px]',
+  heading3: 'font-bold text-[2rem] leading-[38px]',
   heading4:
     'font-medium text-[1rem] leading-[24px] tracking-[0.04em]',
 
