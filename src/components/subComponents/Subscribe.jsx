@@ -16,7 +16,7 @@ const Subscribe = () => {
     >
       {/* subscribe info */}
       <div className="space-y-3">
-        <h3 className={`${styles.heading3} text-[1rem]`}>
+        <h3 className={`${styles.heading3} text-[1.5rem]`}>
           Start mining now
         </h3>
         <p className={`${styles.paragraph} max-w-[348px]`}>
