@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  position: relative;
+}
+
+.hero {
+  min-height: calc(100vh - 100px);
+}
+
+/* Navlink animation */
+
+.nav-link:before {
+  content: '';
+  background: #3671e9;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: 0.3s ease-in-out all;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* subscribe section */
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.subscribe-container > * {
+  flex: 1 1 10ch;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > * {
+  flex: 1 1 10ch;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.375em 0.75em;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  flex: 0 0 70%;
+}
+
+.subscribeBtn {
+  flex: 0 0 30%;
+}
+
+/* Earn section */
+.input,
+.select {
+  width: 100%;
+  padding: 0.375em 0.75em;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+}
+
+/* sidebar */
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background: #0d0d2b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.6s ease-in-out all;
+  /* visibility: hidden; */
+  transform: translateX(100%);
+  z-index: -1;
+  display: grid;
+  place-content: center;
+}
+
+.sidebar.show {
+  visibility: visible;
+  z-index: 3;
+  transform: translateX(0);
+}
+
+.sidebar-list {
+  position: relative;
+}
